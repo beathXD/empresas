@@ -11,7 +11,8 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ProductosComponent } from './componentes/productos/productos.component';
 import { SucursalesComponent } from './componentes/sucursales/sucursales.component';
 import { SucursalIndiComponent } from './componentes/sucursal-indi/sucursal-indi.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,9 @@ import { SucursalIndiComponent } from './componentes/sucursal-indi/sucursal-indi
   imports: [
     BrowserModule,
     AppRoutingModule,
-   
+    HttpClientModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

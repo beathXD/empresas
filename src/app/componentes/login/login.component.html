@@ -3,14 +3,16 @@
         <h2>Login</h2>
         <form>
           <div class="user-box">
-            <input type="text" name="" required="">
+            <input type="text" id="form2Example11" class="form-control"  name="nombre" #nombre="ngModel" [(ngModel)]="usuarioModel.nombre"  placeholder="Ingrese su usuario"
+           />
             <label>Username</label>
           </div>
           <div class="user-box">
-            <input type="password" name="" required="">
-            <label>Password</label>
+            <input type="password" id="form2Example22" class="form-control"  placeholder="Ingrese su contraseña" data-type="password" name="password" #password="ngModel"
+            [(ngModel)]="usuarioModel.password"/>
+                        <label>Password</label>
           </div>
-          <a href="#">
+          <a type="button" (click)="login()">
             <span></span>
             <span></span>
             <span></span>
